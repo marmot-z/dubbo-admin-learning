@@ -32,7 +32,7 @@ Dubbo Admin 项目并非标准的 Dubbo 应用，它在启动时不会进行服�
 
 结合上面介绍的路径，dubbo admin 创建的 bean 监听的路径如下图所示：
 
-![](assets/dubbo-path.excalidraw.png)
+![](asset/dubbo-path.excalidraw.png)
 
 # 源码分析
 
