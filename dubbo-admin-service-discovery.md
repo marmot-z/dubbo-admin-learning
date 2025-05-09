@@ -3,6 +3,7 @@
 dubbo 通过 ServiceMapping、AdminMappingListener 来发现、监听应用实例。我们以 zookeeper 作为元数据中心，则 ServiceMapping 实现为 ZookeeperServiceMapping。
 
 // TODO 补充示意图
+![](./asset/instance-registry-cache.png)
 
 ```java
 public class ZookeeperServiceMapping implements ServiceMapping {  
@@ -133,3 +134,4 @@ private static class DefaultAddressChangeListener implements AddressChangeListen
     }
 }
 ```
+

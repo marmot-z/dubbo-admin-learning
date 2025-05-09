@@ -101,3 +101,26 @@ public void notify(List<URL> urls) {
     }  
 }
 ```
+
+![](./asset/interface-registry-cache.png)
+
+interfaceRegistryCache 内部数据示例：
+```plantuml
+@startjson
+{
+  "consumers": {
+    "org.apache.dubbo.samples.governance.api.DemoService": {
+      "587CAE77A67C28E8": "consumer://192.168.202.132/org.apache.dubbo.samples.governance.api.DemoService2?..."
+    },
+    "org.apache.dubbo.samples.governance.api.DemoService2": {
+      "587CAE77A67C28E8": "consumer://192.168.202.132/org.apache.dubbo.samples.governance.api.DemoService2?..."
+    }
+  },
+  "providers": {
+    "org.apache.dubbo.mock.api.MockService": {
+      "9938968319490B50": "dubbo://192.168.202.132:30880/org.apache.dubbo.mock.api.MockService?..."
+    }
+  }
+}
+@endjson
+```
